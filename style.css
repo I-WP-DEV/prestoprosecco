@@ -105,6 +105,16 @@ Version:        1.0.1
 	.btx-section:not(#occasions) > div > div > div > div > div{
 		height: 100vh !important;
 	}
+
+	.btx-background,
+	.btx-background > div,
+	.btx-background > div > div{
+		height: 100vh;
+	}
+
+	.btx-section-wrapper.btx-section-wrapper{
+		padding:0 !important;
+	}
 }
 
 @media only screen and (max-height: 768px) and (orientation: landscape) {
