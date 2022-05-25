@@ -16,7 +16,8 @@ function bateaux_parent_theme_enqueue_styles() {
 	wp_enqueue_style( 'bateaux-style', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'presto_prosecco-style',
 		get_stylesheet_directory_uri() . '/style.css',
-		array( 'bateaux-style' )
+		array( 'bateaux-style' ),
+	'1.0.1'
 	);
 
 	wp_enqueue_script('tween', 'https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js', array(), '20190111', false);
