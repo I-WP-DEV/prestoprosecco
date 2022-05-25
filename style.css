@@ -1,0 +1,117 @@
+/*
+Theme Name:     Presto Prosecco
+Theme URI:
+Description:    Bateaux child theme.
+Author:         Entwine Design/Hector Borges
+Author URI:     http://entwinedesign.com/
+Template:       bateaux
+Version:        0.1.0
+*/
+
+#where .btx-html {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.animated-wrap {
+	position: absolute;
+	height: 1000px;
+	width: 100%;
+	top: -12vw;
+	left: 0;
+}
+
+.animated-img {
+	position: relative;
+	height: 900px;
+	z-index: 9999;
+}
+
+.bucket {
+	position: absolute;
+	top: 17.6vw;
+}
+
+.arm {
+	position: absolute;
+	width: 100%;
+	top: -1000px;
+}
+
+.can {
+	position: absolute;
+	width: 100%;
+}
+
+.arm img {
+	width: 100%;
+}
+
+.can img {
+	width: 100%;
+}
+
+.cans {
+	display: none;
+}
+
+.btx-section {
+	position: relative;
+  	overflow: hidden;
+}
+
+.can-4 img {
+	margin-right: -1.5vw;
+}
+
+@media only screen and (max-width: 1024px) {
+	.animated-wrap {
+		display: none;
+	}
+
+	.btx-section-wrapper {
+		padding-top: 40px !important;
+		height: 100%;
+	}
+
+	#where .btx-section-wrapper:before {
+		content: "";
+		background: url('http://prestoprosecco.com/wp-content/uploads/2019/01/full-bucket-static.png');
+		background-repeat: no-repeat;
+		background-size: 80%;
+		background-position: bottom right;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+	}
+
+	#where .btx-image {
+		margin-bottom: 0;
+	}
+
+	#where .btx-container--fullwidth {
+		padding-bottom: 150px !important;
+	}
+}
+
+@media only screen and (max-height: 768px) and (orientation: landscape) {
+	#where .btx-section-wrapper:before {
+		background-size: 50%;
+	}
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1500px) {
+	#where .btx-section-wrapper {
+		display: block;
+		margin-top: 4vw;
+	}
+
+	.animated-img {
+		margin-top: 70px;
+
+	}
+}
